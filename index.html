@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" class="display">
+        <button class="clear" onclick="clearCalculator()">AC</button>
+        <button class="clear" onclick="clearLastIndex()"><i class="fa fa-arrow-left"></i></button>
+        <button class="operator" onclick="storeOperator('%')">%</button>
+        <button class="operator" name="operator" onclick="storeOperator('*')">*</button>
+
+        <button class="number" onclick="storeValue(7)">7</button>
+        <button class="number" onclick="storeValue(8)">8</button>
+        <button class="number" onclick="storeValue(9)">9</button>
+        <button class="operator" name="operator" onclick="storeOperator('/')">/</button>
+
+        <button class="number" onclick="storeValue(4)">4</button>
+        <button class="number" onclick="storeValue(5)">5</button>
+        <button class="number" onclick="storeValue(6)">6</button>
+        <button class="operator" name="operator" onclick="storeOperator('-')">-</button>
+
+        <button class="number" onclick="storeValue(1)">1</button>
+        <button class="number" onclick="storeValue(2)">2</button>
+        <button class="number" onclick="storeValue(3)">3</button>
+        <button class="operator" name="operator" onclick="storeOperator('+')">+</button>
+
+        <button class="number" onclick="storeValue(0)">0</button>
+        <button class="number" onclick="storeValue(0)">00</button>
+        <button class="decimal">.</button>
+        <button class="equals" onclick="operation()">=</button>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
